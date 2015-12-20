@@ -1,0 +1,4 @@
+Record=SheetSymbol|SourceDocument=Main.SchDoc|Designator=U_Attenuator|SchDesignator=U_Attenuator|FileName=Attenuator.SchDoc|SymbolType=Normal|RawFileName=Attenuator.SchDoc
+Record=SheetSymbol|SourceDocument=Main.SchDoc|Designator=U_Control|SchDesignator=U_Control|FileName=Control.SchDoc|SymbolType=Normal|RawFileName=Control.SchDoc
+Record=SheetSymbol|SourceDocument=Main.SchDoc|Designator=U_Power|SchDesignator=U_Power|FileName=Power.SchDoc|SymbolType=Normal|RawFileName=Power.SchDoc
+Record=TopLevelDocument|FileName=Main.SchDoc
