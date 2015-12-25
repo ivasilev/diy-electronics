@@ -1,0 +1,218 @@
+Board Information Report
+Filename     : W:\Projects\diy-electronics\Audio\Zvezda-Input Selector\HW\Project\ZvezdaInputSelector.PcbDoc
+Date         : 12/23/2015
+Time         : 12:54:30 AM
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 3900milsx1900mils
+    Components on board, 56
+count : 2
+
+Routing Information
+    Routing completion, 84.97%
+    Connections, 153
+    Connections routed, 130
+    Connections remaing, 23
+count : 4
+
+Layer, Arcs, Pads, Vias, Tracks, Texts, Fills, Regions, ComponentBodies
+    Top Layer, 0, 94, 0, 315, 0, 0, 0, 0
+    Bottom Layer, 0, 0, 0, 47, 0, 0, 2, 0
+    Mechanical 1, 0, 0, 0, 4, 0, 0, 0, 0
+    Top Overlay, 25, 0, 0, 438, 123, 1, 1, 0
+    Bottom Overlay, 0, 0, 0, 0, 0, 0, 0, 0
+    Top Paste, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Paste, 0, 0, 0, 0, 0, 0, 0, 0
+    Top Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Drill Guide, 0, 0, 0, 0, 0, 0, 0, 0
+    Keep-Out Layer, 0, 0, 0, 0, 0, 0, 0, 0
+    Drill Drawing, 0, 0, 0, 0, 0, 0, 0, 0
+    Multi-Layer, 0, 135, 13, 0, 0, 0, 0, 0
+count : 13
+
+Layer Pairs, Vias
+    Top Layer - Bottom Layer, 13
+count : 1
+
+Non-Plated Hole Size, Pads, Vias
+count : 0
+
+Plated Hole Size, Pads, Vias
+    0mils, 94, 0
+    19.685mils, 0, 13
+    28mils, 3, 0
+    31.496mils, 48, 0
+    31.496mils, 8, 0
+    35mils, 8, 0
+    36mils, 3, 0
+    39mils, 23, 0
+    39.016mils, 9, 0
+    39.016mils, 6, 0
+    44mils, 13, 0
+    51.181mils, 1, 0
+    51.181mils, 1, 0
+    59.055mils, 6, 0
+    118.11mils, 6, 0
+count : 15
+
+Non-Plated Slot Size / Length, Pads
+count : 0
+
+Plated Slot Size / Length, Pads
+count : 0
+
+Non-Plated Square Hole Size, Pads
+count : 0
+
+Plated Square Hole Size, Pads
+count : 0
+
+Top Layer Annular Ring Size, Count
+    15.748mils, 13
+    18.504mils, 4
+    18.504mils, 12
+    21mils, 10
+    22mils, 1
+    25mils, 8
+    25.984mils, 6
+    25.984mils, 9
+    26mils, 23
+    27.559mils, 10
+    29mils, 3
+    30mils, 2
+    33.504mils, 30
+    36mils, 3
+    47.244mils, 1
+    47.244mils, 1
+    59.055mils, 6
+    98.425mils, 6
+count : 18
+
+Mid Layer Annular Ring Size, Count
+    15.748mils, 13
+    18.504mils, 4
+    18.504mils, 12
+    21mils, 10
+    22mils, 1
+    25mils, 8
+    25.984mils, 6
+    25.984mils, 9
+    26mils, 23
+    27.559mils, 10
+    29mils, 3
+    30mils, 2
+    33.504mils, 30
+    36mils, 3
+    47.244mils, 1
+    47.244mils, 1
+    59.055mils, 6
+    98.425mils, 6
+count : 18
+
+Bottom Layer Annular Ring Size, Count
+    15.748mils, 13
+    18.504mils, 4
+    18.504mils, 12
+    21mils, 10
+    22mils, 1
+    25mils, 8
+    25.984mils, 6
+    25.984mils, 9
+    26mils, 23
+    27.559mils, 10
+    29mils, 3
+    30mils, 2
+    33.504mils, 30
+    36mils, 3
+    47.244mils, 1
+    47.244mils, 1
+    59.055mils, 6
+    98.425mils, 6
+count : 18
+
+Pad Solder Mask, Count
+    4mils, 229
+count : 1
+
+Pad Paste Mask, Count
+    0mils, 229
+count : 1
+
+Pad Pwr/Gnd Expansion, Count
+    20mils, 229
+count : 1
+
+Pad Relief Conductor Width, Count
+    10mils, 229
+count : 1
+
+Pad Relief Air Gap, Count
+    10mils, 229
+count : 1
+
+Pad Relief Entries, Count
+    4, 229
+count : 1
+
+Via Solder Mask, Count
+    4mils, 13
+count : 1
+
+Via Pwr/Gnd Expansion, Count
+    20mils, 13
+count : 1
+
+Track Width, Count
+    8mils, 150
+    9.842mils, 2
+    9.843mils, 5
+    10mils, 285
+    15mils, 192
+    25mils, 50
+    30mils, 27
+    50mils, 93
+count : 8
+
+Arc Line Width, Count
+    10mils, 22
+    14mils, 3
+count : 2
+
+Arc Radius, Count
+    7mils, 3
+    20mils, 5
+    30mils, 1
+    64.031mils, 8
+    68.898mils, 4
+    107.355mils, 1
+    124.016mils, 1
+    157.48mils, 1
+    196.85mils, 1
+count : 9
+
+Arc Degrees, Count
+    87, 4
+    89, 4
+    180, 6
+    231, 1
+    360, 10
+count : 5
+
+Text Height, Count
+    59.055mils, 3
+    60mils, 120
+count : 2
+
+Text Width, Count
+    10mils, 123
+count : 1
+
+Net Track Width, Count
+    10mils, 56
+count : 1
+
+Net Via Size, Count
+    50mils, 56
+count : 1
