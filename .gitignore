@@ -7,3 +7,4 @@
 Makefile-local-default.mk
 Audio/Molniya-Relay Attenuator/SW/Project/MolniyaRelayAttenuator.X/build/
 Audio/Molniya-Relay Attenuator/SW/Project/MolniyaRelayAttenuator.X/dist/
+Makefile-genesis.properties
