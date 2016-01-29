@@ -4,3 +4,4 @@
 *.SchDoc.Zip
 *.PrjPcb.Zip
 /Audio/Molniya-Relay Attenuator/SW/Project/MolniyaRelayAttenuator.X/nbproject/private/
+Makefile-local-default.mk
