@@ -71,7 +71,7 @@ extern "C" {
 
 /** Memory size
  * @remarks Should be set to the size of address pointer */
-typedef uint32_t Mem_t;
+typedef uint16_t Mem_t;
 
 #define NO_MSG_ID   0xff
 #define ISR_TID     0xfe
