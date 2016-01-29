@@ -321,7 +321,9 @@ static void myTask(void) {
 }
  @endcode 
  *******************************************************************************/
+#if !defined(__XC8)
 #define event_wait_multiple(waitAll, args...)   OS_WAIT_MULTIPLE_EVENTS( waitAll, args)
+#endif
 
 
 /*********************************************************************************/

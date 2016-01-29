@@ -59,16 +59,12 @@ extern "C" {
 
 
 
-
+#if !defined(__XC8)
 #define OS_WAIT_MULTIPLE_EVENTS( waitAll, args...)	do {\
 								os_wait_multiple(waitAll, args, NO_EVENT);\
 								OS_SCHEDULE(EVENT_OFS2);\
 							   } while (0)
-
-
-
-
-
+#endif
 
 #define OS_SIGNAL_EVENT(event)	do {\
 								os_signal_event(event);\

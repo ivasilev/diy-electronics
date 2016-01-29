@@ -40,7 +40,12 @@
 
 /** @file cocoos.h cocoOS kernel header file*/
 
+
+#if !defined(__XC8)
 #include <inttypes.h>
+#else
+#include <stdint.h>
+#endif
 #include "os_port.h"
 #include "os_typedef.h"
 #include "os_defines.h"

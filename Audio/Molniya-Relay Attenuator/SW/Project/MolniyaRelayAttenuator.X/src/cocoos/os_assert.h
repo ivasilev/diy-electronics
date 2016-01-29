@@ -38,7 +38,7 @@
 #ifndef _os_assert_h__
 #define _os_assert_h__
 
-#include <inttypes.h>
+//#include <inttypes.h>
 
 #ifdef __cplusplus
 extern "C" {
