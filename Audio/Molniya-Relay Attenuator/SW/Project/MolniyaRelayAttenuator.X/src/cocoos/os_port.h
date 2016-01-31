@@ -37,8 +37,8 @@
 #ifndef OS_PORT_H_
 #define OS_PORT_H_
 
-//#include <interrupt.h>
-#define os_enable_interrupts()  GIE=1
-#define os_disable_interrupts() GIE=0
+#include "../mcc_generated_files/mcc.h"
+#define os_enable_interrupts()  INTERRUPT_GlobalInterruptEnable()
+#define os_disable_interrupts() INTERRUPT_GlobalInterruptDisable()
 
 #endif
