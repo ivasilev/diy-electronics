@@ -1,21 +1,22 @@
-/* 
- * File:   main.c
- * Author: Ivan
- *
- * Created on 29 Януари 2016, 16:34
- */
+//==============================================================================
+// File:   main.c
+// Author: Ivan
+//
+// Created on 29 Януари 2016, 16:34
+//==============================================================================
 
 #include <stdio.h>
 #include <stdlib.h>
-
 
 #include "mcc_generated_files/mcc.h"
 
 #include "cocoos/cocoos.h"
 
-/*
- * 
- */
+#include "app/app.h"
+
+//==============================================================================
+// Entry point
+//==============================================================================
 int main(int argc, char** argv) {
     
     // Initialize the device
@@ -50,6 +51,8 @@ int main(int argc, char** argv) {
     //INTERRUPT_PeripheralInterruptDisable();
 
     os_init();
+    
+    initApp();
     
     INTERRUPT_GlobalInterruptEnable();
     INTERRUPT_PeripheralInterruptEnable();
