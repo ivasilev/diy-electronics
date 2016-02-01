@@ -10,6 +10,8 @@
 
 #include <stdbool.h>
 
+#include "../../deftypes.h"
+
 #include "ButtonFilterConfig.h"
 
 
@@ -31,8 +33,8 @@ typedef enum eButtonStatus_t
 
 typedef enum eButtonTransition_t
 {
-    eButtonTransition_press,
-    eButtonTransition_release,
+    eButtonTransition_Press,
+    eButtonTransition_Release,
     eButtonTransition_count
 } eButtonTransition;
 
@@ -53,7 +55,7 @@ typedef struct buttonCallbackEntry_t
 //==============================================================================    
 extern void buttonTask();
 extern eButtonStatus readButton(eButtonChannel);
-extern void subscribeButtonTransition(eButtonChannel, eButtonTransition, buttonCallback);
+extern HRESULT subscribeButtonTransition(eButtonChannel, eButtonTransition, buttonCallback);
 
 #ifdef	__cplusplus
 }

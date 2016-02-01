@@ -1,9 +1,9 @@
-/* 
- * File:   DinControlConfig.h
- * Author: ivanvasilev
- *
- * Created on January 31, 2016, 7:36 PM
- */
+//==============================================================================
+// File:   DinControlConfig.h
+// Author: ivanvasilev
+//
+// Created on January 31, 2016, 7:36 PM
+//==============================================================================
 
 #ifndef DINCONTROLCONFIG_H
 #define	DINCONTROLCONFIG_H

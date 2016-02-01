@@ -150,6 +150,7 @@ void TMR0_CallBack(void)
 {
     // Add your custom callback code here
     // this code executes every 1 TMR0 periods
+    os_tick();
 }
 /**
   End of File

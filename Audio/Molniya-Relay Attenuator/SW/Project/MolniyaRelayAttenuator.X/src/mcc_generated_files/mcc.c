@@ -74,7 +74,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // CONFIG4L
 #pragma config STVREN = ON    // Stack Full/Underflow Reset Enable bit->Stack full/underflow will cause Reset
 #pragma config LVP = OFF    // Single-Supply ICSP Enable bit->Single-Supply ICSP disabled
-#pragma config XINST = ON    // Extended Instruction Set Enable bit->Instruction set extension and Indexed Addressing mode enabled
+#pragma config XINST = OFF    // Extended Instruction Set Enable bit->Instruction set extension and Indexed Addressing mode enabled
 #pragma config DEBUG = ON    // Background Debug->Enabled
 
 // CONFIG5L

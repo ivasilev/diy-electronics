@@ -1,5 +1,5 @@
 //==============================================================================
-// File:   dinControlConfig.c
+// File:   DinControlConfig.c
 // Author: ivanvasilev
 //
 // Created on January 31, 2016, 18:21 PM

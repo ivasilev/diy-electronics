@@ -1,14 +1,12 @@
-//==============================================================================
-// File:   DouControl.h
+//============================================================================== 
+// File:   ZvezdaControl.h
 // Author: ivanvasilev
 //
-// Created on January 30, 2016, 1:09 PM
+// Created on February 1, 2016, 9:02 PM
 //==============================================================================
 
-#ifndef DOUCONTROL_H
-#define	DOUCONTROL_H
-
-#include "DouControlConfig.h"
+#ifndef ZVEZDACONTROL_H
+#define	ZVEZDACONTROL_H
 
 #ifdef	__cplusplus
 extern "C" {
@@ -17,13 +15,7 @@ extern "C" {
 //==============================================================================
 // Custom types
 //==============================================================================
-typedef enum eDouState_t 
-{
-    eDouState_Low,
-    eDouState_High,
-    eDouState_HighZ,
-    eDouState_count
-} eDouState;
+
 
 //==============================================================================
 // Exported macros
@@ -32,12 +24,11 @@ typedef enum eDouState_t
 //==============================================================================
 // Exported functions
 //==============================================================================    
-extern void douTask();
-extern void setDouState(eDouChannel channel, eDouState state);
+extern void zvezdaTask();
 
 #ifdef	__cplusplus
 }
 #endif
 
-#endif	// DOUCONTROL_H
+#endif	// ZVEZDACONTROL_H
 

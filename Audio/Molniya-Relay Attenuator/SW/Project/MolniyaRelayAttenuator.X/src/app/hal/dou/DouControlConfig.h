@@ -1,9 +1,9 @@
-/* 
- * File:   DouControlConfig.h
- * Author: ivanvasilev
- *
- * Created on January 30, 2016, 2:55 PM
- */
+//==============================================================================
+// File:   DouControlConfig.h
+// Author: ivanvasilev
+//
+// Created on January 30, 2016, 2:55 PM
+//==============================================================================
 
 #ifndef DOUCONTROLCONFIG_H
 #define	DOUCONTROLCONFIG_H

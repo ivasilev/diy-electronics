@@ -1,5 +1,5 @@
 //============================================================================== 
-// File:   douControl.c
+// File:   DouControl.c
 // Author: ivanvasilev
 //
 // Created on January 30, 2016, 14:05 PM
@@ -32,10 +32,10 @@ static void refreshOutputs()
                 douSetHighZ(channel);
                 break;
             case eDouState_Low:
-                douSetHigh(channel); douSetOutput(channel); 
+                douSetLow(channel); douSetOutput(channel); 
                 break;
             case eDouState_High:
-                douSetLow(channel); douSetOutput(channel);
+                douSetHigh(channel); douSetOutput(channel);
                 break;
         }
     }

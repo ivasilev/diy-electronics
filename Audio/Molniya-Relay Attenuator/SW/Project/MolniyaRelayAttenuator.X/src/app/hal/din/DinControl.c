@@ -1,5 +1,5 @@
 //============================================================================== 
-// File:   dinControl.c
+// File:   DinControl.c
 // Author: ivanvasilev
 //
 // Created on January 31, 2016, 7:36 PM
@@ -130,7 +130,10 @@ static void filter()
             default:
                 break;
         }
-        if (eDinStatus_Unknown != pinStatus) dinStatus[channel] = pinStatus;
+        if (eDinStatus_Unknown != pinStatus) 
+        {
+            dinStatus[channel] = pinStatus;
+        }
     }
 }
 
@@ -145,10 +148,9 @@ static void refreshInputs()
 //==============================================================================
 void dinTask(void) 
 {
-    init();
-    
     task_open();
     
+    init();   
     while (1) 
     {
         refreshInputs();
