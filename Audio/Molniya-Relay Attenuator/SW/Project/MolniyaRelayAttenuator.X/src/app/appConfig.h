@@ -20,8 +20,8 @@ extern "C" {
 //==============================================================================
 // Custom macros
 //==============================================================================
-#define MAIN_CLOCK_PERIOD   5       // in ms
-#define MS_TO_TICKS(x)      (x + (MAIN_CLOCK_PERIOD / 2) / MAIN_CLOCK_PERIOD)
+#define MAIN_CLOCK_PERIOD       5       // in ms
+#define MS_TO_TICKS(x)          ((x + (MAIN_CLOCK_PERIOD / 2)) / MAIN_CLOCK_PERIOD)
         
 #define DIN_TASK_FUNC           dinTask
 #define DIN_TASK_PERIOD         5

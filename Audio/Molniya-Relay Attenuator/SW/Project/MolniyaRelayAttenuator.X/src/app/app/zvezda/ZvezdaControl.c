@@ -22,10 +22,10 @@
 //==============================================================================
 // Local defines
 //==============================================================================
-#define     MIN_PERIOD      200
-#define     MAX_PERIOD      2000
-#define     DEFAULT_PERIOD  500
-#define     STEP            100
+#define     MIN_PERIOD      50
+#define     MAX_PERIOD      1000
+#define     DEFAULT_PERIOD  250
+#define     STEP            50
 
 #define     LED_COUNT       4
 
@@ -120,6 +120,7 @@ void zvezdaTask(void)
     task_open();
     
     init();
+
     while(1)  
     {
         step();
