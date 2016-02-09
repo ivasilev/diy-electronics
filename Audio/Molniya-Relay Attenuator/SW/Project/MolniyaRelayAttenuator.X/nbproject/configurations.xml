@@ -26,6 +26,12 @@
             <itemPath>src/app/dat/button/ButtonFilterConfig.c</itemPath>
             <itemPath>src/app/dat/button/ButtonFilterConfig.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f2" displayName="relay" projectFiles="true">
+            <itemPath>src/app/dat/relay/RelayControl.c</itemPath>
+            <itemPath>src/app/dat/relay/RelayControl.h</itemPath>
+            <itemPath>src/app/dat/relay/RelayControlConfig.c</itemPath>
+            <itemPath>src/app/dat/relay/RelayControlConfig.h</itemPath>
+          </logicalFolder>
         </logicalFolder>
         <logicalFolder name="f1" displayName="hal" projectFiles="true">
           <logicalFolder name="f2" displayName="din" projectFiles="true">

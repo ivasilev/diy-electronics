@@ -13,31 +13,37 @@
 
 #include "../../hal/dou/DouControl.h"
 #include "../../dat/button/ButtonFilter.h"
+#include "../../dat/relay/RelayControl.h"
 
 //==============================================================================
 // Local types
 //==============================================================================
+typedef enum eInputChannel_t
+{
+    eInputChannel_1,
+    eInputChannel_2,
+    eInputChannel_3,
+    eInputChannel_4,
+    eInputChannel_count
+} eInputChannel;
 
+typedef struct tInputChannelConfig_t
+{
+    eButtonChannel  button;
+    buttonCallback  buttonCallback;
+    eDouChannel     led;
+    eRelayStatus    relayState[eRelayChannel_count];
+} tInputChannelConfig;
 
 //==============================================================================
 // Local defines
 //==============================================================================
-#define     MIN_PERIOD      50
-#define     MAX_PERIOD      1000
-#define     DEFAULT_PERIOD  250
-#define     STEP            50
-
-#define     LED_COUNT       4
-
-//==============================================================================
-// Local data
-//==============================================================================
-static uint16_t currentPeriod = DEFAULT_PERIOD;
-static eDouChannel ledArray[LED_COUNT] = { eDouChannel_Led1, eDouChannel_Led2, 
-                                           eDouChannel_Led3, eDouChannel_Led4 };
-static int currentLed = 0;
-static bool started = false;
-static uint16_t currentTime = 0;
+#define INPUT_CHANNEL_INIT { \
+    /* eInputChannel_1 */ { eButtonChannel_BUT1, onButton1Pressed, eDouChannel_Led1, { eRelayStatus_Reset,    eRelayStatus_NoChange,  eRelayStatus_Reset  } }, \
+    /* eInputChannel_2 */ { eButtonChannel_BUT2, onButton2Pressed, eDouChannel_Led2, { eRelayStatus_Set,      eRelayStatus_NoChange,  eRelayStatus_Reset  } }, \
+    /* eInputChannel_3 */ { eButtonChannel_BUT3, onButton3Pressed, eDouChannel_Led3, { eRelayStatus_NoChange, eRelayStatus_Reset,     eRelayStatus_Set    } }, \
+    /* eInputChannel_4 */ { eButtonChannel_BUT4, onButton4Pressed, eDouChannel_Led4, { eRelayStatus_NoChange, eRelayStatus_Set,       eRelayStatus_Set    } }, \
+    }
 
 //==============================================================================
 // Local function declarations
@@ -45,72 +51,54 @@ static uint16_t currentTime = 0;
 static void init();
 static void step();
 
-static void onButton1Released();
+static void onButton1Pressed();
 static void onButton2Pressed();
 static void onButton3Pressed();
-static void onButton4Released();
+static void onButton4Pressed();
+
+//==============================================================================
+// Local data
+//==============================================================================
+static const tInputChannelConfig channelConfig[] = INPUT_CHANNEL_INIT;
+
+static int currentChannel = -1;
+static int newChannel;
+static void setRelays(eRelayStatus[eRelayChannel_count]);
 
 //==============================================================================
 // Local functions
 //==============================================================================
-static void init() 
+static void onButton1Pressed()
 {
-    subscribeButtonTransition(eButtonChannel_BUT1, eButtonTransition_Release, onButton1Released);
-    subscribeButtonTransition(eButtonChannel_BUT2, eButtonTransition_Press,   onButton2Pressed);
-    subscribeButtonTransition(eButtonChannel_BUT3, eButtonTransition_Press,   onButton3Pressed);
-    subscribeButtonTransition(eButtonChannel_BUT4, eButtonTransition_Release, onButton4Released);
-    for (int i = 0; i < LED_COUNT; i++)
-    {
-        douSetLow(ledArray[i]);
-    }
-}
-
-static void onButton1Released()
-{
-    started = true;
 }
 
 static void onButton2Pressed()
 {
-    if (currentPeriod > STEP) currentPeriod -= STEP;
-    if (currentPeriod < MIN_PERIOD ) currentPeriod = MIN_PERIOD;
 }
 
 static void onButton3Pressed()
 {
-    currentPeriod += STEP;
-    if (currentPeriod > MAX_PERIOD) currentPeriod = MAX_PERIOD;
 }
 
-static void onButton4Released()
+static void onButton4Pressed()
 {
-    started = false;
+}
+
+static void init() 
+{
+    int i = 0;
+    while (NULL != channelConfig[i].buttonCallback)
+    {
+        subscribeButtonTransition(channelConfig[i].button, eButtonTransition_Press, channelConfig[i].buttonCallback);
+        douSetLow(channelConfig[i].led);
+    }
 }
 
 static void step() 
 {
-    if (true == started)
-    {
-        currentTime += ZVEZDA_TASK_PERIOD;
-        if (currentTime >= currentPeriod) 
-        {
-            for (int i = 0; i < LED_COUNT; i++)
-            {
-                if ( i == currentLed ) 
-                {
-                    setDouState(ledArray[i], eDouState_High);
-                } 
-                else 
-                {
-                    setDouState(ledArray[i], eDouState_Low);
-                }
-            }
-            currentLed++;
-            if (currentLed >= LED_COUNT) currentLed = 0;
-            currentTime = 0;
-        }
-    }
 }
+
+static void setRelays(eRelayStatus[eRelayChannel_count]);
 
 //==============================================================================
 // Exported functions

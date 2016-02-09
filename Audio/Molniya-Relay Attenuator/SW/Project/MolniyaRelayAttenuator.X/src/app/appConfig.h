@@ -11,6 +11,7 @@
 #include "hal/dou/DouControl.h"
 #include "hal/din/DinControl.h"
 #include "dat/button/ButtonFilter.h"
+#include "dat/relay/RelayControl.h"
 #include "app/zvezda/ZvezdaControl.h"
 
 #ifdef	__cplusplus
@@ -34,16 +35,21 @@ extern "C" {
 #define ZVEZDA_TASK_FUNC        zvezdaTask
 #define ZVEZDA_TASK_PERIOD      10
 #define ZVEZDA_TASK_PRIORITY    30
+    
+#define RELAY_TASK_FUNC         relayTask
+#define RELAY_TASK_PERIOD       10      // in ms
+#define RELAY_TASK_PRIORITY     40
 
 #define DOU_TASK_FUNC           douTask
 #define DOU_TASK_PERIOD         10      // in ms
-#define DOU_TASK_PRIORITY       40
+#define DOU_TASK_PRIORITY       50
     
 #define APP_TASK_LIST   {\
     { 0, DIN_TASK_FUNC,     DIN_TASK_PRIORITY,      NULL, 0, 0 }, \
     { 0, BUTTON_TASK_FUNC,  BUTTON_TASK_PRIORITY,   NULL, 0, 0 }, \
     { 0, DOU_TASK_FUNC,     DOU_TASK_PRIORITY,      NULL, 0, 0 }, \
     { 0, ZVEZDA_TASK_FUNC,  ZVEZDA_TASK_PRIORITY,   NULL, 0, 0 }, \
+    { 0, RELAY_TASK_FUNC,   RELAY_TASK_PRIORITY,    NULL, 0, 0 }, \
 }
 
 #ifdef	__cplusplus
