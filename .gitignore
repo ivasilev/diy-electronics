@@ -3,8 +3,11 @@
 *.SchLib.Zip
 *.SchDoc.Zip
 *.PrjPcb.Zip
-/Audio/Molniya-Relay Attenuator/SW/Project/MolniyaRelayAttenuator.X/nbproject/private/
 Makefile-local-default.mk
+Makefile-genesis.properties
+Audio/Molniya-Relay Attenuator/SW/Project/MolniyaRelayAttenuator.X/nbproject/private/
 Audio/Molniya-Relay Attenuator/SW/Project/MolniyaRelayAttenuator.X/build/
 Audio/Molniya-Relay Attenuator/SW/Project/MolniyaRelayAttenuator.X/dist/
-Makefile-genesis.properties
+Audio/Zvezda-Input Selector/SW/Project/Zvezda-InputSelector.X/dist/
+Audio/Zvezda-Input Selector/SW/Project/Zvezda-InputSelector.X/build/
+Audio/Zvezda-Input Selector/SW/Project/Zvezda-InputSelector.X/nbproject/private/
