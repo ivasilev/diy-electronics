@@ -61,7 +61,7 @@ static void onButton4Pressed();
 //==============================================================================
 static const tInputChannelConfig channelConfig[] = INPUT_CHANNEL_INIT;
 
-static int currentChannel = -1;
+static int currentChannel = eInputChannel_count;
 static int newChannel;
 static void setRelays(eRelayStatus[eRelayChannel_count]);
 
@@ -70,24 +70,27 @@ static void setRelays(eRelayStatus[eRelayChannel_count]);
 //==============================================================================
 static void onButton1Pressed()
 {
+    newChannel = eInputChannel_1;
 }
 
 static void onButton2Pressed()
 {
+    newChannel = eInputChannel_2;
 }
 
 static void onButton3Pressed()
 {
+    newChannel = eInputChannel_3;
 }
 
 static void onButton4Pressed()
 {
+    newChannel = eInputChannel_4;
 }
 
 static void init() 
 {
-    int i = 0;
-    while (NULL != channelConfig[i].buttonCallback)
+    for (int i = 0; i < eInputChannel_count; i++)
     {
         subscribeButtonTransition(channelConfig[i].button, eButtonTransition_Press, channelConfig[i].buttonCallback);
         douSetLow(channelConfig[i].led);
@@ -96,9 +99,32 @@ static void init()
 
 static void step() 
 {
+    if (currentChannel != newChannel) 
+    {
+        setRelays(channelConfig[newChannel].relayState);
+        
+        for (int i = 0; i < eInputChannel_count; i++)
+        {
+            if (i == newChannel)
+            {
+                douSetHigh(channelConfig[i].led);
+            }
+            else
+            {
+                douSetLow(channelConfig[i].led);
+            }
+        }
+        currentChannel = newChannel;
+    }
 }
 
-static void setRelays(eRelayStatus[eRelayChannel_count]);
+static void setRelays(eRelayStatus status[eRelayChannel_count] )
+{
+    for (int i = 0; i < eRelayChannel_count; i++)
+    {
+        setRelayState(i, status[i]);
+    }
+}
 
 //==============================================================================
 // Exported functions
