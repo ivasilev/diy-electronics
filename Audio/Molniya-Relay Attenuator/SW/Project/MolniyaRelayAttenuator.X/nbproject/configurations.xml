@@ -93,7 +93,7 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
-      <itemPath>/Users/ivanvasilev/Projects/diy-electronics/Audio/Molniya-Relay Attenuator/SW/Project/MolniyaRelayAttenuator.X/mcc/Zvezda.mc3</itemPath>
+      <itemPath>mcc/Molniya.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
