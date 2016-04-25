@@ -58,13 +58,21 @@ static void process()
                 break;
                 
             case eStateShouldReset:
+                triggerReset(channel);
+                relayState[channel] = eStateResetting;
                 break;
             case eStateResetting:
+                untrigger(channel);
+                relayState[channel] = eStateReset;
                 break;
     
             case eStateShouldSet:
+                triggerSet(channel);
+                relayState[channel] = eStateSetting;
                 break;
             case eStateSetting:
+                untrigger(channel);
+                relayState[channel] = eStateSet;
                 break;
                 
             default:

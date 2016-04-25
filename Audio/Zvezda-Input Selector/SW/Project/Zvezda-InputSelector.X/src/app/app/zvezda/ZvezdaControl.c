@@ -107,11 +107,11 @@ static void step()
         {
             if (i == newChannel)
             {
-                douSetHigh(channelConfig[i].led);
+                setDouState(channelConfig[i].led, eDouState_High);
             }
             else
             {
-                douSetLow(channelConfig[i].led);
+                setDouState(channelConfig[i].led, eDouState_Low);
             }
         }
         currentChannel = newChannel;
