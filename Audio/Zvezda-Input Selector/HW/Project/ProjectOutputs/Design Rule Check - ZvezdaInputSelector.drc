@@ -1,39 +1,39 @@
 Protel Design System Design Rule Check
 PCB File : W:\Projects\diy-electronics\Audio\Zvezda-Input Selector\HW\Project\ZvezdaInputSelector.PcbDoc
-Date     : 12/25/2015
-Time     : 7:15:46 PM
+Date     : 5/1/2016
+Time     : 11:46:54 AM
 
-Processing Rule : Room Main (Bounding Region = (25.4mm, 25.4mm, 124.46mm, 73.66mm) (Disabled)(InComponentClass('Main'))
+Processing Rule : Hole Size Constraint (Min=19.685mil) (Max=196.85mil) (All)
 Rule Violations :0
 
-Processing Rule : Room U_Power (Bounding Region = (64.77mm, 25.4mm, 108.585mm, 73.66mm) (Disabled)(InComponentClass('U_Power'))
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
 Rule Violations :0
 
-Processing Rule : Room U_Control (Bounding Region = (71.12mm, 25.4mm, 109.22mm, 73.66mm) (Disabled)(InComponentClass('U_Control'))
+Processing Rule : Width Constraint (Min=10mil) (Max=100mil) (Preferred=10mil) (All)
 Rule Violations :0
 
-Processing Rule : Room U_Selector (Bounding Region = (25.4mm, 25.4mm, 78.74mm, 73.66mm) (Disabled)(InComponentClass('U_Selector'))
-Rule Violations :0
-
-Processing Rule : Room U_UserInterface (Bounding Region = (108.585mm, 25.4mm, 124.46mm, 73.66mm) (Disabled)(InComponentClass('U_UserInterface'))
-Rule Violations :0
-
-Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Processing Rule : Clearance Constraint (Gap=9.5mil) (All),(All)
 Rule Violations :0
 
 Processing Rule : Broken-Net Constraint ( (All) )
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.241mm) (All),(All)
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.254mm) (Max=2.54mm) (Preferred=0.254mm) (All)
+Processing Rule : Room U_UserInterface (Bounding Region = (4275mil, 1000mil, 4900mil, 2900mil) (Disabled)(InComponentClass('U_UserInterface'))
 Rule Violations :0
 
-Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Processing Rule : Room U_Selector (Bounding Region = (1000mil, 1000mil, 3100mil, 2900mil) (Disabled)(InComponentClass('U_Selector'))
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=0.5mm) (Max=5mm) (All)
+Processing Rule : Room U_Control (Bounding Region = (2800mil, 1000mil, 4300mil, 2900mil) (Disabled)(InComponentClass('U_Control'))
+Rule Violations :0
+
+Processing Rule : Room U_Power (Bounding Region = (2550mil, 1000mil, 4275mil, 2900mil) (Disabled)(InComponentClass('U_Power'))
+Rule Violations :0
+
+Processing Rule : Room Main (Bounding Region = (1000mil, 1000mil, 4900mil, 2900mil) (Disabled)(InComponentClass('Main'))
 Rule Violations :0
 
 
