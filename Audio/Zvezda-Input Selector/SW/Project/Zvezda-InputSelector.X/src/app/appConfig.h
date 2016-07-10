@@ -37,7 +37,7 @@ extern "C" {
 #define ZVEZDA_TASK_PRIORITY    30
     
 #define RELAY_TASK_FUNC         relayTask
-#define RELAY_TASK_PERIOD       10      // in ms
+#define RELAY_TASK_PERIOD       20      // in ms
 #define RELAY_TASK_PRIORITY     40
 
 #define DOU_TASK_FUNC           douTask

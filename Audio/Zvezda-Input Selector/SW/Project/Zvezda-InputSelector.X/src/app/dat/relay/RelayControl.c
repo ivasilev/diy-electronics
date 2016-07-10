@@ -86,8 +86,6 @@ static void process()
 //==============================================================================
 void relayTask(void) 
 {
-
-    
     task_open();
     
     init();
@@ -111,11 +109,17 @@ HRESULT  setRelayState(eRelayChannel channel, eRelayStatus status)
             switch (status)
             {
                 case eRelayStatus_Set:
-                    if ( eStateShouldSet != relayState[channel]) relayState[channel] = eStateShouldSet;
+                    if ((eStateSet != relayState[channel]) && (eStateSetting != relayState[channel])) 
+                    {
+                        relayState[channel] = eStateShouldSet;
+                    }
                     retVal = L_OK;
                     break;
                 case eRelayStatus_Reset:
-                    if ( eStateShouldReset != relayState[channel]) relayState[channel] = eStateShouldReset;
+                    if ((eStateReset != relayState[channel]) && (eStateResetting != relayState[channel])) 
+                    {
+                        relayState[channel] = eStateShouldReset;
+                    }
                     retVal = L_OK;
                     break;
                 default:

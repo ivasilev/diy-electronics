@@ -39,10 +39,10 @@ typedef struct tInputChannelConfig_t
 // Local defines
 //==============================================================================
 #define INPUT_CHANNEL_INIT { \
-    /* eInputChannel_1 */ { eButtonChannel_BUT1, onButton1Pressed, eDouChannel_Led1, { eRelayStatus_Reset,    eRelayStatus_NoChange,  eRelayStatus_Reset  } }, \
-    /* eInputChannel_2 */ { eButtonChannel_BUT2, onButton2Pressed, eDouChannel_Led2, { eRelayStatus_Set,      eRelayStatus_NoChange,  eRelayStatus_Reset  } }, \
-    /* eInputChannel_3 */ { eButtonChannel_BUT3, onButton3Pressed, eDouChannel_Led3, { eRelayStatus_NoChange, eRelayStatus_Reset,     eRelayStatus_Set    } }, \
-    /* eInputChannel_4 */ { eButtonChannel_BUT4, onButton4Pressed, eDouChannel_Led4, { eRelayStatus_NoChange, eRelayStatus_Set,       eRelayStatus_Set    } }, \
+    /* eInputChannel_1 */ { eButtonChannel_BUT1, onButton1Pressed, eDouChannel_Led1, { eRelayStatus_Set,        eRelayStatus_Reset, eRelayStatus_NoChange   } }, \
+    /* eInputChannel_2 */ { eButtonChannel_BUT2, onButton2Pressed, eDouChannel_Led2, { eRelayStatus_NoChange,   eRelayStatus_Set,   eRelayStatus_Reset      } }, \
+    /* eInputChannel_3 */ { eButtonChannel_BUT3, onButton3Pressed, eDouChannel_Led3, { eRelayStatus_Reset,      eRelayStatus_Reset, eRelayStatus_NoChange   } }, \
+    /* eInputChannel_4 */ { eButtonChannel_BUT4, onButton4Pressed, eDouChannel_Led4, { eRelayStatus_NoChange,   eRelayStatus_Set,   eRelayStatus_Set        } }, \
     }
 
 //==============================================================================
@@ -62,7 +62,7 @@ static void onButton4Pressed();
 static const tInputChannelConfig channelConfig[] = INPUT_CHANNEL_INIT;
 
 static int currentChannel = eInputChannel_count;
-static int newChannel;
+static int newChannel = eInputChannel_count;
 static void setRelays(eRelayStatus[eRelayChannel_count]);
 
 //==============================================================================
