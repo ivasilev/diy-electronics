@@ -1,1 +1,4 @@
-Record=TopLevelDocument|FileName=Amplifier_Left.SchDoc
+Record=SheetSymbol|SourceDocument=Main.SchDoc|Designator=U_Amplifier_Left|SchDesignator=U_Amplifier_Left|FileName=Amplifier_Left.SchDoc|SymbolType=Normal|RawFileName=Amplifier_Left.SchDoc
+Record=SheetSymbol|SourceDocument=Main.SchDoc|Designator=U_Amplifier_Right|SchDesignator=U_Amplifier_Right|FileName=Amplifier_Right.SchDoc|SymbolType=Normal|RawFileName=Amplifier_Right.SchDoc
+Record=SheetSymbol|SourceDocument=Main.SchDoc|Designator=U_Power|SchDesignator=U_Power|FileName=Power.SchDoc|SymbolType=Normal|RawFileName=Power.SchDoc
+Record=TopLevelDocument|FileName=Main.SchDoc
