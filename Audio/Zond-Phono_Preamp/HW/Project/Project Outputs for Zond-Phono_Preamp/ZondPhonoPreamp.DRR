@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: ZondPhonoPreamp.PcbDoc   11/1/2016  8:04:53 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : ZondPhonoPreamp.TXT
+EIA File   : ZondPhonoPreamp.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        31mil (0.7874mm)         Round          74               58.58 Inch (1487.99 mm)
+T2        35mil (0.889mm)          Round          66               26.65 Inch (676.80 mm)
+T3        43mil (1.0922mm)         Round          157              60.06 Inch (1525.60 mm)
+T4        59mil (1.4986mm)         Round          11               15.96 Inch (405.31 mm)
+T5        106mil (2.6924mm)        Round          14               11.84 Inch (300.66 mm)
+T6        126mil (3.2004mm)        Round          6         NPTH   25.33 Inch (643.31 mm)
+---------------------------------------------------------------------------
+Totals                                            328              198.41 Inch (5039.69 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

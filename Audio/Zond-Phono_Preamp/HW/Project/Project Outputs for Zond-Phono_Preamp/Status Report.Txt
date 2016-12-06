@@ -1,0 +1,17 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Project [Zond-Phono_Preamp.PrjPCB]
+   Generated File[ZondPhonoPreamp.GTL]
+   Generated File[ZondPhonoPreamp.GBL]
+   Generated File[ZondPhonoPreamp.GTS]
+   Generated File[ZondPhonoPreamp.GBS]
+   Generated File[ZondPhonoPreamp.GM1]
+   Generated File[ZondPhonoPreamp.RUL]
+   Generated File[ZondPhonoPreamp.EXTREP]
+   Generated File[ZondPhonoPreamp.REP]
+
+
+Files Generated   : 8
+Documents Printed : 0
+
+Finished Output Generation At 8:05:22 AM On 11/1/2016
